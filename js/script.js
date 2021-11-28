@@ -1,4 +1,4 @@
-function newItem(){
+/* function newItem(){
 
 //javascript
 //1. Adding a new item to the list of items:
@@ -34,4 +34,15 @@ function newItem(){
  // 4. Reordering the items:
    $('#list').sortable();
 
+}
+*/
+
+let li = $('<li></li>');
+let inputValue = $('#input').val();
+li.append(inputValue);
+
+if (inputValue === '') {
+  alert ('You must write something!');
+} else {
+  $('#list').append(li);
 }
