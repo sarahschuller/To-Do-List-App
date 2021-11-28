@@ -46,3 +46,11 @@ if (inputValue === '') {
 } else {
   $('#list').append(li);
 }
+
+function crossOut(){
+  li.toggleClass ('strike')
+}
+
+li.on('dbclick', function (crossOut){
+  li.toggleClass('strike');
+});
